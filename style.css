@@ -372,6 +372,9 @@ section p {
     #projects .icon {
         margin:25px 10px;
     }
+    .box-header {
+    height:150px;
+    }
 }
 
 @media only screen and (max-width: 550px) {
