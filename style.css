@@ -373,7 +373,7 @@ section p {
         margin:25px 10px;
     }
     .box-header {
-    height:150px;
+        max-height:150px;
     }
 }
 
