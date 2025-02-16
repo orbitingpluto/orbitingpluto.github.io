@@ -86,7 +86,7 @@ a {
 
 .launch {
     margin-top:20px;
-    line-height: 3em;
+    line-height: 3rem;
     text-decoration: none;
 
 }
@@ -347,14 +347,14 @@ section p {
     .welcome h2 {
         font-size: 3.5rem;
     }
-    .welcome p{
+    .welcome-text p{
         font-size: 1.5rem;
     }
     .welcome {
         left: 10vw;
     }
     .launch {
-        margin-left:25vw
+        margin-left:25vw;
     }
     .navlinkAnim {
         display: none;
@@ -390,10 +390,11 @@ section p {
         font-size: 3rem;
     }
     .welcome p{
-        font-size: 4vw;
+        font-size: 1.5rem;
     }
     .launch {
-        margin-left: 20vw
+        margin-left: 20vw;
+        font-size: 3rem;
     }
     #about {
         font-size:1rem;
