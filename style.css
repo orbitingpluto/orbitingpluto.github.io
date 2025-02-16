@@ -86,15 +86,22 @@ a {
 
 .launch {
     margin-top:20px;
-    line-height: 40px;
+    line-height: 3em;
     text-decoration: none;
+
+}
+
+.launch p {
+    font-family: 'Vollkorn', sans-serif;
+    font-size: 2em;
+    text-shadow:1px 1px 20px #fff;
 }
 
 .welcome-text p {
     font-size: 1.5rem;
     margin-top:-1rem;
     color:rgb(163, 163, 163);
-    line-height: 32px;
+    line-height: 2rem;
 }
 
 section {
