@@ -66,7 +66,7 @@ a {
 
 .welcome-text {
     text-shadow: 1px 1px 5px black;
-    color:gray;
+    color:rgb(235, 235, 235);
 }
 
 .welcome-text h2 {
@@ -100,7 +100,7 @@ a {
 .welcome-text p {
     font-size: 1.5rem;
     margin-top:-1rem;
-    color:rgb(163, 163, 163);
+    color:rgb(254, 254, 254);
     line-height: 2rem;
 }
 
@@ -115,7 +115,7 @@ div + section {
 
 #about {
     max-width: 70%;
-    background-color: rgba(0, 0, 0, 0.699);
+    background-color: rgba(0, 0, 0, 0.698);
     margin: auto;
     font-weight:400;
     padding: 5em;
@@ -130,10 +130,15 @@ div + section {
     font-size:2em;
 }
 
+#about h4 {
+    margin: 2rem 0;
+    font-size:1.75em;
+}
+
 #about-me p {
     line-height: 36px;
     font-size: 1.1rem;
-    color:rgb(168, 168, 168);
+    color:#cccccc;
 }
 
 #about-me span {
@@ -274,6 +279,30 @@ section p {
     grid-column: 1;
     margin:0.5rem;
     max-width: 100%;
+}
+
+#books {
+    max-width: 70%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.548);
+}
+
+#book-container {
+    display: flex;
+    justify-content: flex-start;
+    padding: 1em;
+    flex-wrap: wrap;
+}
+
+#book-item {
+    text-align: center;
+    width: 17em;
+    padding:0.5em;
+    text-wrap: wrap;
+}
+
+#book-item img {
+    width: 15em;
 }
 
 /**/
