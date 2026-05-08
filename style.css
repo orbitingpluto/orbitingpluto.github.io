@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@1,300&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=DM+Serif+Display:ital@0;1&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -67,12 +67,18 @@ a {
 .welcome-text {
     text-shadow: 1px 1px 5px black;
     color:rgb(235, 235, 235);
+    text-transform: none;
 }
 
-.welcome-text h2 {
-    font-size: 5rem;
-    font-family: 'Vollkorn', sans-serif;
+.welcome h1, .launch p, h2, h3:not(div.box-text h3) {
+    font-family: 'DM Serif Display', sans-serif;
     font-style: italic;
+}
+
+.welcome-text h1 {
+    font-size: 4rem;
+    text-transform:lowercase;
+    margin-bottom: 0.25em;
 }
 
 .welcome-text span {
@@ -92,16 +98,17 @@ a {
 }
 
 .launch p {
-    font-family: 'Vollkorn', sans-serif;
-    font-size: 2em;
+    font-size: 1.25em;
     text-shadow:1px 1px 20px #fff;
+    color: white;
 }
 
 .welcome-text p {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     margin-top:-1rem;
     color:rgb(254, 254, 254);
-    line-height: 2rem;
+    line-height: 1.5rem;
+    text-transform: lowercase;
 }
 
 section {
@@ -118,27 +125,35 @@ div + section {
     background-color: rgba(0, 0, 0, 0.698);
     margin: auto;
     font-weight:400;
-    padding: 5em;
+    padding: 5em 5em 0em 5em;
+}
+
+a.launch {
+    padding-bottom: 2em;
 }
 
 #about h2 {
-    margin: 2rem 0;
+    margin: 1.5rem 0;
 }
 
 #about h3 {
-    margin: 2rem 0;
+    margin: 1.5rem 0 1.5rem 0;
     font-size:2em;
 }
 
 #about h4 {
-    margin: 2rem 0;
+    margin: 0 0 1rem 0;
     font-size:1.75em;
 }
 
-#about-me p {
+p {
     line-height: 36px;
-    font-size: 1.1rem;
+    font-size: 1rem;
     color:#cccccc;
+}
+
+#about-me p + p {
+    margin-top: 1em;
 }
 
 #about-me span {
@@ -164,9 +179,26 @@ div + section {
     justify-content: space-between;
 }
 
+#skills p {
+    font-size: 1rem;
+}
+
 #skills ul {
-    margin-left: 2rem;
-    font-size: 1.1rem;
+    margin-left: 1rem;
+    font-size: 1rem;
+}
+
+#skills h4 {
+    font-size: 1.3rem;
+}
+
+#skills div {
+    background-color: rgba(255, 255, 255, 0.144);
+    width: 100%;
+    margin: 1em;
+    height: min-content;
+    padding: 2em;
+    border-radius: 1.1rem;
 }
 
 .project-row {
@@ -188,7 +220,7 @@ h2 {
 }
 
 section p {
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 .navbar {
@@ -295,14 +327,18 @@ section p {
 }
 
 #book-item {
+    margin:1em;
     text-align: center;
-    width: 17em;
-    padding:0.5em;
+    width:min-content;
+    height: min-content;
+    padding:1em;
     text-wrap: wrap;
+    background-color: rgba(255, 255, 255, 0.144);
+    border-radius: 1.1rem;
 }
 
 #book-item img {
-    width: 15em;
+    width: 10em;
 }
 
 /**/
@@ -345,6 +381,15 @@ section p {
     transform: scale(1.05);
   }
 
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
 
 /* mobile */
 
