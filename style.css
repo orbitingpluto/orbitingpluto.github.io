@@ -176,7 +176,8 @@ p {
 
 #skills {
     display: flex; 
-    justify-content: space-between;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 #skills p {
@@ -194,11 +195,11 @@ p {
 
 #skills div {
     background-color: rgba(255, 255, 255, 0.144);
-    width: 100%;
     margin: 1em;
-    height: min-content;
+    width: min-content;
     padding: 2em;
     border-radius: 1.1rem;
+    flex-grow: 1;
 }
 
 .project-row {
@@ -272,9 +273,9 @@ section p {
     border-radius: 1.1rem;
     border: solid rgba(255, 255, 255, 0.144) 0.5rem;
     max-width: 70vw;
-    overflow: hidden;
     height:max-content;
     font-size: 16px;
+    flex-grow: 1;
 }
 
 .box h3 {
@@ -330,11 +331,11 @@ section p {
     margin:1em;
     text-align: center;
     width:min-content;
-    height: min-content;
     padding:1em;
     text-wrap: wrap;
     background-color: rgba(255, 255, 255, 0.144);
     border-radius: 1.1rem;
+    flex-grow: 1;
 }
 
 #book-item img {
