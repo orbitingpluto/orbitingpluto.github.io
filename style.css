@@ -36,6 +36,7 @@ p, h2 {
     color: white;
 }
 
+
 a {
     color:unset;
 }
@@ -61,7 +62,6 @@ a {
     top:35vh;
     left:50vw;
     position:absolute;
-    overflow: hidden;
 }
 
 .welcome-text {
@@ -107,7 +107,6 @@ a {
     font-size: 1.25rem;
     margin-top:-1rem;
     color:rgb(254, 254, 254);
-    line-height: 1.5rem;
     text-transform: lowercase;
 }
 
